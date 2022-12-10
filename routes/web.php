@@ -34,3 +34,7 @@ Route::get('/slider/create' , [AdminSliderController::class , 'create'])->name('
 Route::post('/slider/store' , [AdminSliderController::class , 'store'])->name('slider.store');
 
 
+
+//omda
+
+
