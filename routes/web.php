@@ -20,17 +20,27 @@ Route::get('/', function () {
     return view('index');
 });
 
-Route::get('/admin',[AdminHomeController::class,'index' ])->name('admin.index');
+Route::group(['prefix'=>'admin' , 'as'=>'admin.'],function(){
 
-Route::get('/faq/create',[AdminFaqController::class ,'create'])->name('faq.create');
-Route::post('/faq/store' ,[AdminFaqController::class , 'store'])->name('faq.store');
-Route::get('/faqs',[AdminFaqController::class ,'index'])->name('faqs');
-Route::delete('/faq/delete',[AdminFaqController::class ,'delete'])->name('faq.delete');
-Route::get('/faq/edit/{faqid}',[AdminFaqController::class ,'edit'])->name('faq.edit');
-Route::put('/faq/update',[AdminFaqController::class ,'update'])->name('faq.update');
+    Route::get('/',[AdminHomeController::class,'index' ])->name('index');
 
-//slider routes
-Route::get('/slider/create' , [AdminSliderController::class , 'create'])->name('slider.create');
-Route::post('/slider/store' , [AdminSliderController::class , 'store'])->name('slider.store');
+    Route::group(['prefix'=>'faq' , 'as'=>'faq.'],function (){
+        Route::get('/',[AdminFaqController::class ,'index'])->name('all');
+        Route::get('/create',[AdminFaqController::class ,'create'])->name('create');
+        Route::post('/store' ,[AdminFaqController::class , 'store'])->name('store');
+        Route::delete('/delete',[AdminFaqController::class ,'delete'])->name('delete');
+        Route::get('/edit/{faqid}',[AdminFaqController::class ,'edit'])->name('edit');
+        Route::put('/update',[AdminFaqController::class ,'update'])->name('update');
+
+    });
+
+    //slider routes
+    Route::get('/slider/create' , [AdminSliderController::class , 'create'])->name('slider.create');
+    Route::post('/slider/store' , [AdminSliderController::class , 'store'])->name('slider.store');
+
+});
+
+
+
 
 
