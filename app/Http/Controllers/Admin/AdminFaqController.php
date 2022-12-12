@@ -57,7 +57,6 @@ class AdminFaqController extends Controller
     {
         $faq = faq::find($faqid);
         return view('Admin.faq.edit' , compact('faq'));
-
     }
 
     /**
@@ -78,7 +77,7 @@ class AdminFaqController extends Controller
 
         Alert::success('Success', 'faq was updated');
 
-        return redirect()->route('faqs');
+        return redirect()->route('admin.faq.all');
 
 
     }

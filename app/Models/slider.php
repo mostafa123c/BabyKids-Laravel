@@ -17,4 +17,9 @@ class slider extends Model
         ];
     }
 
+    public function getImageAttribute($value)
+    {
+        return 'images/slider/'.$value;
+    }
+
 }

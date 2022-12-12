@@ -32,7 +32,7 @@
 
 
 
-                                    <form method="POST" action="{{route('faq.update')}}">
+                                    <form method="POST" action="{{route('admin.faq.update')}}">
                                         @csrf
                                         @method('PUT')
                                         <input type="hidden" name="faq_id" value="{{$faq->id}}">

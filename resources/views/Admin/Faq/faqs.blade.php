@@ -14,7 +14,7 @@
                                     <div class="row">
                                         <div class="col-xl-12 col-md-12 col-sm-12 col-12">
                                             <h4>Faq's Table</h4>
-                                            <a href="{{route('faq.create')}}" class="btn btn-primary">Add New Faq</a>
+                                            <a href="{{route('admin.faq.create')}}" class="btn btn-primary">Add New Faq</a>
                                         </div>
                                     </div>
                                 </div>
@@ -35,7 +35,7 @@
                                                     <td>{{$faq->answer}}</td>
                                                     <td>{{$faq->question}}</td>
                                                     <td class="text-center">
-                                                        <form method="post" action="{{route('faq.delete')}}">
+                                                        <form method="post" action="{{route('admin.faq.delete')}}">
                                                             @csrf
                                                             @method('DELETE')
                                                             <input name="faq_id" type="hidden" value="{{$faq->id}}">
@@ -45,7 +45,7 @@
                                                         </form>
                                                     </td>
                                                     <td>
-                                                        <a href="{{Route('faq.edit' ,[$faq->id])}}">Edit</a>
+                                                        <a href="{{Route('admin.faq.edit' ,[$faq->id])}}">Edit</a>
                                                     </td>
                                                 </tr>
                                             @endforeach

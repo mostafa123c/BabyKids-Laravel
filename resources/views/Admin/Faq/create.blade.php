@@ -32,7 +32,7 @@
 
 
 
-                                    <form method="POST" action="{{route('faq.store')}}">
+                                    <form method="POST" action="{{route('admin.faq.store')}}">
                                         @csrf
                                         <div class="input-group mb-4">
                                             <div class="input-group-prepend">
