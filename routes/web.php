@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\Admin\AdminActivityController;
+use App\Http\Controllers\Admin\AdminCourseController;
 use App\Http\Controllers\Admin\AdminFaqController;
 use App\Http\Controllers\Admin\AdminHomeController;
 use App\Http\Controllers\Admin\AdminSliderController;
@@ -50,8 +52,24 @@ Route::group(['prefix'=>'admin' , 'as'=>'admin.' , 'middleware'=>'auth'],functio
 
     });
 
+    Route::group(['prefix'=>'activity' , 'as'=>'activity.'],function (){
+        Route::get('/' , [AdminActivityController::class , 'index'])->name('all');
+        Route::get('/create' , [AdminActivityController::class , 'create'])->name('create');
+        Route::post('/store' , [AdminActivityController::class , 'store'])->name('store');
+        Route::delete('/delete',[AdminActivityController::class ,'delete'])->name('delete');
+        Route::get('/edit/{activityid}',[AdminActivityController::class ,'edit'])->name('edit');
+        Route::put('/update',[AdminActivityController::class ,'update'])->name('update');
 
+    });
 
+    Route::group(['prefix'=>'course' , 'as'=>'course.'],function (){
+        Route::get('/' , [AdminCourseController::class , 'index'])->name('all');
+        Route::get('/create' , [AdminCourseController::class , 'create'])->name('create');
+        Route::post('/store' , [AdminCourseController::class , 'store'])->name('store');
+        Route::delete('/delete',[AdminCourseController::class ,'delete'])->name('delete');
+        Route::get('/edit/{courseid}',[AdminCourseController::class ,'edit'])->name('edit');
+        Route::put('/update',[AdminCourseController::class ,'update'])->name('update');
+    });
 
 
 });
