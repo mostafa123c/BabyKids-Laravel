@@ -5,7 +5,9 @@ use App\Http\Controllers\Admin\AdminCourseController;
 use App\Http\Controllers\Admin\AdminFaqController;
 use App\Http\Controllers\Admin\AdminHomeController;
 use App\Http\Controllers\Admin\AdminSliderController;
+use App\Http\Controllers\Admin\AdminTeacherController;
 use App\Http\Controllers\Admin\AuthController;
+use App\Http\Controllers\User\HomeController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -19,9 +21,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-});
+
+Route::get('/', [HomeController::class, 'index']);
+Route::get('/courses', [HomeController::class, 'courses'])->name('user.courses');
+Route::get('/teachers', [HomeController::class, 'teachers'])->name('user.teachers');
+Route::get('/teacher', [TeacherController::class, 'teacher']);
+
+
 
 Route::get('/admin/login' , [AuthController::class , 'loginPage'])->name('admin.loginPage');
 Route::post('/admin/login' , [AuthController::class , 'login'])->name('admin.login');
@@ -69,6 +75,15 @@ Route::group(['prefix'=>'admin' , 'as'=>'admin.' , 'middleware'=>'auth'],functio
         Route::delete('/delete',[AdminCourseController::class ,'delete'])->name('delete');
         Route::get('/edit/{courseid}',[AdminCourseController::class ,'edit'])->name('edit');
         Route::put('/update',[AdminCourseController::class ,'update'])->name('update');
+    });
+
+    Route::group(['prefix'=>'teacher' , 'as'=>'teacher.'],function (){
+        Route::get('/' , [AdminTeacherController::class , 'index'])->name('all');
+        Route::get('/create' , [AdminTeacherController::class, 'create'])->name('create');
+        Route::post('/store' , [AdminTeacherController::class, 'store'])->name('store');
+        Route::delete('/delete',[AdminTeacherController::class,'delete'])->name('delete');
+        Route::get('/edit/{teacherid}',[AdminTeacherController::class ,'edit'])->name('edit');
+        Route::put('/update',[AdminTeacherController::class ,'update'])->name('update');
     });
 
 

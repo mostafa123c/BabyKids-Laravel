@@ -3,8 +3,9 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
-use App\Http\Requests\course\AddCourse;
+
 use App\Http\Requests\course\DeleteCourse;
+use App\Http\Requests\course\AddCourse;
 use App\Http\Requests\course\UpdateCourse;
 use App\Http\Traits\imagestrait;
 use App\Models\course;
@@ -15,7 +16,7 @@ class AdminCourseController extends Controller
     use imagestrait;
     public function index()
     {
-        $courses =course::get();
+        $courses =course::with('teacher')->get();
         return view('admin.course.courses' ,compact('courses'));
     }
 

@@ -10,6 +10,16 @@ class course extends Model
     use HasFactory;
     protected $fillable = ['name' , 'price' , 'description' , 'image'];
 
+    public function teacher()
+    {
+        return $this->hasOne(teacher::class , 'course_id' , 'id');
+    }
+
+    public function allteachers()
+    {
+        return $this->hasMany(teacher::class , 'course_id' , 'id');
+    }
+
     public static function rules()
     {
         return [
