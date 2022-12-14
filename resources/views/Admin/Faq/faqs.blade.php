@@ -32,8 +32,8 @@
                                             <tbody>
                                             @foreach($faqs as $faq)
                                                 <tr>
-                                                    <td>{{$faq->answer}}</td>
                                                     <td>{{$faq->question}}</td>
+                                                    <td>{{$faq->answer}}</td>
                                                     <td class="text-center">
                                                         <form method="post" action="{{route('admin.faq.delete')}}">
                                                             @csrf

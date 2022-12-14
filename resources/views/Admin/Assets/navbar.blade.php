@@ -160,12 +160,7 @@
                 </a>
                 <div class="dropdown-menu position-absolute e-animated e-fadeInUp" aria-labelledby="userProfileDropdown">
                     <div class="user-profile-section">
-                        <div class="media mx-auto">
-                            <img src="assets/img/90x90.jpg" class="img-fluid mr-2" alt="avatar">
-                            <div class="media-body">
-                                <p>Web Developer</p>
-                            </div>
-                        </div>
+
                     </div>
 {{--                    <div class="dropdown-item">--}}
 {{--                        <a href="user_profile.html">--}}
@@ -214,7 +209,7 @@
             <ul class="navbar-nav theme-brand flex-row  text-center">
                 <li class="nav-item theme-logo">
                     <a href="{{route('admin.index')}}">
-                        <img src="assets/img/90x90.jpg" class="navbar-logo" alt="logo">
+                        <img src="{{asset('AdminAssets/assets/img/admin.png')}}" class="navbar-logo" alt="logo">
                     </a>
                 </li>
                 <li class="nav-item theme-text">

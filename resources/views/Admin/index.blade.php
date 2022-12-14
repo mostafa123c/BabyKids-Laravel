@@ -8,9 +8,9 @@
 
                 <div class="row layout-top-spacing">
 
-                    <div class="col-xl-5 col-lg-12 col-md-12 col-sm-12 col-12 layout-spacing" >
-                        <div class="widget widget-one" style="width: content-box">
-                            <div class="widget-heading">
+                    <div class="col-xl-5 col-lg-12 col-md-12 col-sm-12 col-12 layout-spacing">
+                        <div class="widget widget-one" style="height: 150px"  >
+                            <div class="widget-heading" >
                                 <h6 class="">Statistics</h6>
                             </div>
                             <div class="w-chart">

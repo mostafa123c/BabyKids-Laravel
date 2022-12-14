@@ -1,4 +1,4 @@
-@include('Assets.navbar')
+@include('User.Assets.navbar')
 <div class="nicdark_section nicdark_navigation fade-down">
 
     <div class="nicdark_menu_boxed">
@@ -46,37 +46,37 @@
                         <ul class="nicdark_list border">
 
                             <li class="nicdark_border_grey">
-                                <p><a class="grey" href="index.html">ENGLISH</a><a href="index.html"
+                                <p><a class="grey" href="#">ENGLISH</a><a href="#"
                                                                                    class="nicdark_btn right nicdark_opacity"><img
-                                                alt="" width="30"
-                                                src="{{asset('EndUserAssets/img/flag/img1.png')}}"></a></p>
+                                            alt="" width="30"
+                                            src="{{asset('EndUserAssets/img/flag/img1.png')}}"></a></p>
                                 <div class="nicdark_space15"></div>
                             </li>
 
                             <li class="nicdark_border_grey">
                                 <div class="nicdark_space15"></div>
-                                <p><a class="grey" href="index.html">RUSSIAN</a><a href="index.html"
+                                <p><a class="grey" href="#">RUSSIAN</a><a href="#"
                                                                                    class="nicdark_btn right nicdark_opacity"><img
-                                                alt="" width="30"
-                                                src="{{asset('EndUserAssets/img/flag/img2.png')}}"></a></p>
+                                            alt="" width="30"
+                                            src="{{asset('EndUserAssets/img/flag/img2.png')}}"></a></p>
                                 <div class="nicdark_space15"></div>
                             </li>
 
                             <li class="nicdark_border_grey">
                                 <div class="nicdark_space15"></div>
-                                <p><a class="grey" href="index.html">ARABIC</a><a href="index.html"
+                                <p><a class="grey" href="#">ARABIC</a><a href="#"
                                                                                   class="nicdark_btn right nicdark_opacity"><img
-                                                alt="" width="30"
-                                                src="{{asset('EndUserAssets/img/flag/img3.png')}}"></a></p>
+                                            alt="" width="30"
+                                            src="{{asset('EndUserAssets/img/flag/img3.png')}}"></a></p>
                                 <div class="nicdark_space15"></div>
                             </li>
 
                             <li class="nicdark_border_grey">
                                 <div class="nicdark_space15"></div>
-                                <p><a class="grey" href="index.html">ITALIAN</a><a href="index.html"
+                                <p><a class="grey" href="#">ITALIAN</a><a href="#"
                                                                                    class="nicdark_btn right nicdark_opacity"><img
-                                                alt="" width="30"
-                                                src="{{asset('EndUSerAssets/img/flag/img4.png')}}"></a></p>
+                                            alt="" width="30"
+                                            src="{{asset('EndUSerAssets/img/flag/img4.png')}}"></a></p>
                             </li>
 
                         </ul>
@@ -98,19 +98,17 @@
                     <div class="nicdark_space20"></div>
 
                     <div class="nicdark_logo nicdark_marginleft10">
-                        <a href="index.html"><img alt="" src="img/logo.png"></a>
+                        <a href="#"><img alt="" src="img/logo.png"></a>
                     </div>
 
-                    <a class="nicdark_btn_icon nicdark_zoom nicdark_bg_yellow_hover nicdark_right_sidebar_btn_open nicdark_marginright10 nicdark_bg_orange extrasmall nicdark_radius white right"><i
-                                class="icon-basket-1"></i></a>
 
                     <nav>
                         <ul class="nicdark_menu nicdark_margin010 nicdark_padding50">
 
                             <li class="orange">
-                                <a href="index.html">HOME</a>
+                                <a href="#">HOME</a>
                                 <ul class="sub-menu">
-                                    <li><a href="index.html">Home Default</a></li>
+                                    <li><a href="#">Home Default</a></li>
                                     <li><a href="index-2.html">Color Sections</a></li>
                                     <li><a href="index-3.html">Home Boxed</a></li>
                                 </ul>
@@ -120,7 +118,7 @@
                                 <ul class="sub-menu">
                                     <li><a href="prices.html">Prices</a></li>
                                     <li>
-                                        <a href="teachers.html">Teachers</a>
+                                        <a href="{{route('user.teachers')}}">Teachers</a>
                                         <ul class="sub-menu">
                                             <li><a href="teachers.html">All Teachers</a></li>
                                             <li><a href="single-teacher.html">Single Teacher</a></li>
@@ -134,7 +132,7 @@
                                         </ul>
                                     </li>
                                     <li>
-                                        <a href="courses.html">Courses</a>
+                                        <a href="{{ route('user.courses')}}">Courses</a>
                                         <ul class="sub-menu">
                                             <li><a href="courses.html">All Courses</a></li>
                                             <li><a href="single-course.html">Single Course</a></li>
@@ -170,7 +168,7 @@
                                 </ul>
                             </li>
                             <li class="blue">
-                                <a href="courses.html">COURSES</a>
+                                <a href="{{route('user.courses')}}">COURSES</a>
                                 <ul class="sub-menu">
                                     <li><a href="courses.html">All Courses</a></li>
                                     <li><a href="single-course.html">Single Course</a></li>
@@ -214,7 +212,7 @@
                                 </ul>
                             </li>
                             <li class="green">
-                                <a href="blog-masonry.html">BLOG</a>
+                                <a href="#">BLOG</a>
                                 <ul class="sub-menu">
                                     <li><a href="blog-masonry.html">Masonry Layout</a></li>
                                     <li>
@@ -228,14 +226,14 @@
                                 </ul>
                             </li>
                             <li class="orange">
-                                <a href="events.html">EVENTS</a>
+                                <a href="#">EVENTS</a>
                                 <ul class="sub-menu">
                                     <li><a href="events.html">All Events</a></li>
                                     <li><a href="single-event.html">Single Event</a></li>
                                 </ul>
                             </li>
                             <li class="grey">
-                                <a href="contact-1.html">CONTACTS</a>
+                                <a href="#">CONTACTS</a>
                             </li>
                         </ul>
                     </nav>
@@ -262,23 +260,16 @@
     <div class="tp-banner-container">
         <div class="nicdark_slide1">
 
-            <ul>
-
+            <ul >
+                 @foreach($sliders as $slider)
                 <!--start second-->
-                <li data-transition="fade" data-slotamount="7" data-masterspeed="1000" data-saveperformance="on"
+                <li  data-transition="fade" data-slotamount="7" data-masterspeed="1000" data-saveperformance="on"
                     data-title="LESSON">
-                    <img src="img/slide/img3.jpg" alt="" data-lazyload="img/slide/img3.jpg"
+                    <img src="{{asset($slider->image)}}" alt="" data-lazyload="{{asset($slider->image)}}"
                          data-bgposition="center bottom" data-bgfit="cover" data-bgrepeat="no-repeat">
                 </li>
                 <!--end second-->
-
-                <!--start first-->
-                <li data-transition="fade" data-slotamount="7" data-masterspeed="500" data-saveperformance="on"
-                    data-title="FRIENDS">
-                    <img src="img/slide/img1.jpg" alt="" data-lazyload="img/slide/img1.jpg" data-bgposition="center top"
-                         data-bgfit="cover" data-bgrepeat="no-repeat">
-                </li>
-                <!--end first-->
+                @endforeach
 
             </ul>
 
@@ -294,10 +285,11 @@
 
         <div class="grid grid_12 percentage nomargin">
             <div class="nicdark_textevidence center">
-                <div class="nicdark_textevidence nicdark_width_percentage25 nicdark_bg_blue nicdark_shadow nicdark_radius_left">
+                <div
+                    class="nicdark_textevidence nicdark_width_percentage25 nicdark_bg_blue nicdark_shadow nicdark_radius_left">
                     <div class="nicdark_textevidence">
                         <div class="nicdark_margin30">
-                            <h2 class="white subtitle"><a class="white" href="courses.html">COURSES</a></h2>
+                            <h2 class="white subtitle"><a class="white" href="{{ route('user.courses')}}">COURSES</a></h2>
                         </div>
                         <i class="nicdark_zoom icon-pencil-2 nicdark_iconbg left extrabig blue nicdark_displaynone_ipadland nicdark_displaynone_ipadpotr"></i>
                     </div>
@@ -305,7 +297,7 @@
                 <div class="nicdark_textevidence nicdark_width_percentage25 nicdark_bg_yellow nicdark_shadow">
                     <div class="nicdark_textevidence">
                         <div class="nicdark_margin30">
-                            <h2 class="white subtitle"><a class="white" href="prices.html">PRICES</a></h2>
+                            <h2 class="white subtitle"><a class="white" href="#">PRICES</a></h2>
                         </div>
                         <i class="nicdark_zoom icon-money-1 nicdark_iconbg left extrabig yellow nicdark_displaynone_ipadland nicdark_displaynone_ipadpotr"></i>
                     </div>
@@ -313,15 +305,16 @@
                 <div class="nicdark_textevidence nicdark_width_percentage25 nicdark_bg_orange nicdark_shadow">
                     <div class="nicdark_textevidence">
                         <div class="nicdark_margin30">
-                            <h2 class="white subtitle"><a class="white" href="events.html">EVENTS</a></h2>
+                            <h2 class="white subtitle"><a class="white" href="#">EVENTS</a></h2>
                         </div>
                         <i class="nicdark_zoom icon-music-2 nicdark_iconbg left extrabig orange nicdark_displaynone_ipadland nicdark_displaynone_ipadpotr"></i>
                     </div>
                 </div>
-                <div class="nicdark_textevidence nicdark_width_percentage25 nicdark_bg_green nicdark_shadow nicdark_radius_right">
+                <div
+                    class="nicdark_textevidence nicdark_width_percentage25 nicdark_bg_green nicdark_shadow nicdark_radius_right">
                     <div class="nicdark_textevidence">
                         <div class="nicdark_margin30">
-                            <h2 class="white subtitle"><a class="white" href="teachers.html">TEACHERS</a></h2>
+                            <h2 class="white subtitle"><a class="white" href="t{{route('user.teachers')}}">TEACHERS</a></h2>
                         </div>
                         <i class="nicdark_zoom icon-graduation-cap-1 nicdark_iconbg left extrabig green nicdark_displaynone_ipadland nicdark_displaynone_ipadpotr"></i>
                     </div>
@@ -343,7 +336,6 @@
 
         <div class="nicdark_space50"></div>
 
-
         <div class="grid grid_12">
             <h1 class="subtitle greydark">OUR ACTIVITIES</h1>
             <div class="nicdark_space20"></div>
@@ -353,124 +345,26 @@
             <div class="nicdark_space10"></div>
         </div>
 
-
+@foreach($activities as $activity)
         <div class="grid grid_4 nicdark_relative">
 
             <div class="nicdark_btn_iconbg nicdark_bg_yellow nicdark_absolute extrabig nicdark_shadow nicdark_radius">
                 <div>
-                    <i class="icon-leaf-1 nicdark_iconbg left big white"></i>
+                   <img src="{{$activity->icon}}">
                 </div>
             </div>
 
             <div class="nicdark_activity nicdark_marginleft100">
-                <h4>CUSTOM FOOD</h4>
+                <h4>{{$activity->title}}</h4>
                 <div class="nicdark_space20"></div>
-                <p>Lorem ipsum dolor sit amet, consec adipiscing elit. Pellentesque tincidunt rutrum sapien, sed
-                    ultricies diam.</p>
+                <p>{{$activity->slug}}</p>
                 <div class="nicdark_space20"></div>
                 <a href="#" class="nicdark_btn grey"><i class="icon-right-open-outline"></i> More</a>
                 <div class="nicdark_space20"></div>
             </div>
 
         </div>
-
-        <div class="grid grid_4 nicdark_relative">
-
-            <div class="nicdark_btn_iconbg nicdark_bg_orange nicdark_absolute extrabig nicdark_shadow nicdark_radius">
-                <div>
-                    <i class="icon-stopwatch nicdark_iconbg left big white"></i>
-                </div>
-            </div>
-
-            <div class="nicdark_activity nicdark_marginleft100">
-                <h4>MANY SPORTS</h4>
-                <div class="nicdark_space20"></div>
-                <p>Lorem ipsum dolor sit amet, consec adipiscing elit. Pellentesque tincidunt rutrum sapien, sed
-                    ultricies diam.</p>
-                <div class="nicdark_space20"></div>
-                <a href="#" class="nicdark_btn grey"><i class="icon-right-open-outline"></i> More</a>
-                <div class="nicdark_space20"></div>
-            </div>
-
-        </div>
-
-        <div class="grid grid_4 nicdark_relative">
-
-            <div class="nicdark_btn_iconbg nicdark_bg_green nicdark_absolute extrabig nicdark_shadow nicdark_radius">
-                <div>
-                    <i class="icon-cab nicdark_iconbg left big white"></i>
-                </div>
-            </div>
-
-            <div class="nicdark_activity nicdark_marginleft100">
-                <h4>BUS SERVICE</h4>
-                <div class="nicdark_space20"></div>
-                <p>Lorem ipsum dolor sit amet, consec adipiscing elit. Pellentesque tincidunt rutrum sapien, sed
-                    ultricies diam.</p>
-                <div class="nicdark_space20"></div>
-                <a href="#" class="nicdark_btn grey"><i class="icon-right-open-outline"></i> More</a>
-                <div class="nicdark_space20"></div>
-            </div>
-
-        </div>
-
-
-        <div class="grid grid_4 nicdark_relative">
-
-            <div class="nicdark_btn_iconbg nicdark_bg_blue nicdark_absolute extrabig nicdark_shadow nicdark_radius">
-                <div>
-                    <i class="icon-headphones-1 nicdark_iconbg left big white"></i>
-                </div>
-            </div>
-
-            <div class="nicdark_activity nicdark_marginleft100">
-                <h4>MUSIC LESSON</h4>
-                <div class="nicdark_space20"></div>
-                <p>Lorem ipsum dolor sit amet, consec adipiscing elit. Pellentesque tincidunt rutrum sapien, sed
-                    ultricies diam.</p>
-                <div class="nicdark_space20"></div>
-                <a href="#" class="nicdark_btn grey"><i class="icon-right-open-outline"></i> More</a>
-            </div>
-
-        </div>
-
-        <div class="grid grid_4 nicdark_relative">
-
-            <div class="nicdark_btn_iconbg nicdark_bg_violet nicdark_absolute extrabig nicdark_shadow nicdark_radius">
-                <div>
-                    <i class="icon-map nicdark_iconbg left big white"></i>
-                </div>
-            </div>
-
-            <div class="nicdark_activity nicdark_marginleft100">
-                <h4>EXCURSIONS</h4>
-                <div class="nicdark_space20"></div>
-                <p>Lorem ipsum dolor sit amet, consec adipiscing elit. Pellentesque tincidunt rutrum sapien, sed
-                    ultricies diam.</p>
-                <div class="nicdark_space20"></div>
-                <a href="#" class="nicdark_btn grey"><i class="icon-right-open-outline"></i> More</a>
-            </div>
-
-        </div>
-
-        <div class="grid grid_4 nicdark_relative">
-
-            <div class="nicdark_btn_iconbg nicdark_bg_red nicdark_absolute extrabig nicdark_shadow nicdark_radius">
-                <div>
-                    <i class="icon-globe-2 nicdark_iconbg left big white"></i>
-                </div>
-            </div>
-
-            <div class="nicdark_activity nicdark_marginleft100">
-                <h4>LANGUAGES</h4>
-                <div class="nicdark_space20"></div>
-                <p>Lorem ipsum dolor sit amet, consec adipiscing elit. Pellentesque tincidunt rutrum sapien, sed
-                    ultricies diam.</p>
-                <div class="nicdark_space20"></div>
-                <a href="#" class="nicdark_btn grey"><i class="icon-right-open-outline"></i> More</a>
-            </div>
-
-        </div>
+        @endforeach
 
         <div class="nicdark_space50"></div>
 
@@ -490,14 +384,14 @@
             <div class="nicdark_space50"></div>
 
             <div class="grid grid_6 nicdark_aligncenter_iphoneland nicdark_aligncenter_iphonepotr">
-                <a href="courses.html"
+                <a href="{{route('user.courses')}}"
                    class="nicdark_disable_floatright_iphoneland nicdark_disable_floatright_iphonepotr nicdark_btn nicdark_bg_blue medium right nicdark_shadow nicdark_radius white nicdark_press"><i
-                            class="icon-th-outline"></i>&nbsp;&nbsp;&nbsp;ALL COURSES</a>
+                        class="icon-th-outline"></i>&nbsp;&nbsp;&nbsp;ALL COURSES</a>
             </div>
             <div class="grid grid_6 nicdark_aligncenter_iphoneland nicdark_aligncenter_iphonepotr">
-                <a href="contact-1.html"
+                <a href="#"
                    class=" nicdark_btn nicdark_bg_blue medium nicdark_shadow nicdark_radius white nicdark_press"><i
-                            class="icon-pencil-1"></i>&nbsp;&nbsp;&nbsp;CONTACT US</a>
+                        class="icon-pencil-1"></i>&nbsp;&nbsp;&nbsp;CONTACT US</a>
             </div>
 
             <div class="nicdark_space40"></div>
@@ -752,15 +646,15 @@
                     <div class="nicdark_space5"></div>
                     <a title="CURRICULUM" href="single-teacher.html"
                        class="nicdark_rotate nicdark_tooltip nicdark_btn_icon small nicdark_bg_orangedark nicdark_radius_circle white"><i
-                                class="icon-download-outline"></i></a>
+                            class="icon-download-outline"></i></a>
                     <div class="nicdark_space20"></div>
                     <a title="DOCUMENTS" href="single-teacher.html"
                        class="nicdark_rotate nicdark_tooltip nicdark_btn_icon small nicdark_bg_orangedark nicdark_radius_circle white"><i
-                                class="icon-attach-outline"></i></a>
+                            class="icon-attach-outline"></i></a>
                     <div class="nicdark_space20"></div>
                     <a title="COURSES" href="single-teacher.html"
                        class="nicdark_rotate nicdark_tooltip nicdark_btn_icon small nicdark_bg_orangedark nicdark_radius_circle white"><i
-                                class="icon-mic-outline"></i></a>
+                            class="icon-mic-outline"></i></a>
                     <div class="nicdark_space20"></div>
                 </div>
 
@@ -798,15 +692,15 @@
                     <div class="nicdark_space5"></div>
                     <a title="CURRICULUM" href="single-teacher.html"
                        class="nicdark_rotate nicdark_tooltip nicdark_btn_icon small nicdark_bg_bluedark nicdark_radius_circle white"><i
-                                class="icon-download-outline"></i></a>
+                            class="icon-download-outline"></i></a>
                     <div class="nicdark_space20"></div>
                     <a title="DOCUMENTS" href="single-teacher.html"
                        class="nicdark_rotate nicdark_tooltip nicdark_btn_icon small nicdark_bg_bluedark nicdark_radius_circle white"><i
-                                class="icon-attach-outline"></i></a>
+                            class="icon-attach-outline"></i></a>
                     <div class="nicdark_space20"></div>
                     <a title="COURSES" href="single-teacher.html"
                        class="nicdark_rotate nicdark_tooltip nicdark_btn_icon small nicdark_bg_bluedark nicdark_radius_circle white"><i
-                                class="icon-mic-outline"></i></a>
+                            class="icon-mic-outline"></i></a>
                     <div class="nicdark_space20"></div>
                 </div>
 
@@ -845,15 +739,15 @@
                     <div class="nicdark_space5"></div>
                     <a title="CURRICULUM" href="single-teacher.html"
                        class="nicdark_rotate nicdark_tooltip nicdark_btn_icon small nicdark_bg_yellowdark nicdark_radius_circle white"><i
-                                class="icon-download-outline"></i></a>
+                            class="icon-download-outline"></i></a>
                     <div class="nicdark_space20"></div>
                     <a title="DOCUMENTS" href="single-teacher.html"
                        class="nicdark_rotate nicdark_tooltip nicdark_btn_icon small nicdark_bg_yellowdark nicdark_radius_circle white"><i
-                                class="icon-attach-outline"></i></a>
+                            class="icon-attach-outline"></i></a>
                     <div class="nicdark_space20"></div>
                     <a title="COURSES" href="single-teacher.html"
                        class="nicdark_rotate nicdark_tooltip nicdark_btn_icon small nicdark_bg_yellowdark nicdark_radius_circle white"><i
-                                class="icon-mic-outline"></i></a>
+                            class="icon-mic-outline"></i></a>
                     <div class="nicdark_space20"></div>
                 </div>
 
@@ -891,15 +785,15 @@
                     <div class="nicdark_space5"></div>
                     <a title="CURRICULUM" href="single-teacher.html"
                        class="nicdark_rotate nicdark_tooltip nicdark_btn_icon small nicdark_bg_violetdark nicdark_radius_circle white"><i
-                                class="icon-download-outline"></i></a>
+                            class="icon-download-outline"></i></a>
                     <div class="nicdark_space20"></div>
                     <a title="DOCUMENTS" href="single-teacher.html"
                        class="nicdark_rotate nicdark_tooltip nicdark_btn_icon small nicdark_bg_violetdark nicdark_radius_circle white"><i
-                                class="icon-attach-outline"></i></a>
+                            class="icon-attach-outline"></i></a>
                     <div class="nicdark_space20"></div>
                     <a title="COURSES" href="single-teacher.html"
                        class="nicdark_rotate nicdark_tooltip nicdark_btn_icon small nicdark_bg_violetdark nicdark_radius_circle white"><i
-                                class="icon-mic-outline"></i></a>
+                            class="icon-mic-outline"></i></a>
                     <div class="nicdark_space20"></div>
                 </div>
 
@@ -1018,7 +912,7 @@
 
                     <a href="single-post-right-sidebar.html"
                        class="nicdark_zoom nicdark_btn_icon nicdark_bg_blue nicdark_border_bluedark white medium nicdark_radius_circle nicdark_absolute_left"><i
-                                class="icon-link-outline"></i></a>
+                            class="icon-link-outline"></i></a>
 
                     <img alt="" src="img/blog/img1.jpg">
 
@@ -1032,7 +926,7 @@
                             consectetur adip iscing elit psum dolor sit amet.</p>
                         <div class="nicdark_space20"></div>
                         <a href="single-post-right-sidebar.html" class="white nicdark_btn"><i
-                                    class="icon-doc-text-1 "></i> Read More</a>
+                                class="icon-doc-text-1 "></i> Read More</a>
                     </div>
 
                     <i class="icon-camera-outline nicdark_iconbg right medium blue"></i>
@@ -1052,7 +946,7 @@
                             consectetur adip iscing elit psum dolor sit amet.</p>
                         <div class="nicdark_space20"></div>
                         <a href="single-post-right-sidebar.html" class="white nicdark_btn"><i
-                                    class="icon-doc-text-1 "></i> Read More</a>
+                                class="icon-doc-text-1 "></i> Read More</a>
                     </div>
 
                     <i class="icon-pencil-1 nicdark_iconbg right medium green"></i>
@@ -1064,7 +958,7 @@
 
                     <a href="single-post-right-sidebar.html"
                        class="nicdark_zoom nicdark_btn_icon nicdark_bg_violet nicdark_border_violetdark white medium nicdark_radius_circle nicdark_absolute_left"><i
-                                class="icon-link-outline"></i></a>
+                            class="icon-link-outline"></i></a>
 
                     <img alt="" src="img/blog/img2.jpg">
 
@@ -1081,7 +975,7 @@
 
                     <a href="single-post-right-sidebar.html"
                        class="nicdark_zoom nicdark_btn_icon nicdark_bg_orange nicdark_border_orangedark white medium nicdark_radius_circle nicdark_absolute_left"><i
-                                class="icon-link-outline"></i></a>
+                            class="icon-link-outline"></i></a>
 
                     <img alt="" src="img/blog/img4.jpg">
 
@@ -1098,7 +992,7 @@
 
                     <a href="single-post-right-sidebar.html"
                        class="nicdark_zoom nicdark_btn_icon nicdark_bg_red nicdark_border_reddark white medium nicdark_radius_circle nicdark_absolute_left"><i
-                                class="icon-link-outline"></i></a>
+                            class="icon-link-outline"></i></a>
 
                     <img alt="" src="img/blog/img3.jpg">
 
@@ -1112,7 +1006,7 @@
                             consectetur adip iscing elit psum dolor sit amet.</p>
                         <div class="nicdark_space20"></div>
                         <a href="single-post-right-sidebar.html" class="white nicdark_btn"><i
-                                    class="icon-doc-text-1 "></i> Read More</a>
+                                class="icon-doc-text-1 "></i> Read More</a>
                     </div>
 
                     <i class="icon-pencil-1 nicdark_iconbg right medium red"></i>
@@ -1124,7 +1018,7 @@
 
                     <a href="single-post-right-sidebar.html"
                        class="nicdark_zoom nicdark_btn_icon nicdark_bg_green nicdark_border_greendark white medium nicdark_radius_circle nicdark_absolute_left"><i
-                                class="icon-link-outline"></i></a>
+                            class="icon-link-outline"></i></a>
 
                     <img alt="" src="img/blog/img5.jpg">
 
@@ -1138,7 +1032,7 @@
                             consectetur adip iscing elit psum dolor sit amet.</p>
                         <div class="nicdark_space20"></div>
                         <a href="single-post-right-sidebar.html" class="white nicdark_btn"><i
-                                    class="icon-doc-text-1 "></i> Read More</a>
+                                class="icon-doc-text-1 "></i> Read More</a>
                     </div>
 
                     <i class="icon-picture-outline nicdark_iconbg right medium green"></i>
@@ -1150,7 +1044,7 @@
 
                     <a href="single-post-right-sidebar.html"
                        class="nicdark_zoom nicdark_btn_icon nicdark_bg_yellow nicdark_border_yellowdark white medium nicdark_radius_circle nicdark_absolute_left"><i
-                                class="icon-link-outline"></i></a>
+                            class="icon-link-outline"></i></a>
 
                     <img alt="" src="img/blog/img7.jpg">
 
@@ -1164,7 +1058,7 @@
                             consectetur adip iscing elit psum dolor sit amet.</p>
                         <div class="nicdark_space20"></div>
                         <a href="single-post-right-sidebar.html" class="white nicdark_btn"><i
-                                    class="icon-doc-text-1 "></i> Read More</a>
+                                class="icon-doc-text-1 "></i> Read More</a>
                     </div>
 
                     <i class="icon-picture-outline nicdark_iconbg right medium yellow"></i>
@@ -1176,7 +1070,7 @@
 
                     <a href="single-post-right-sidebar.html"
                        class="nicdark_zoom nicdark_btn_icon nicdark_bg_blue nicdark_border_bluedark white medium nicdark_radius_circle nicdark_absolute_left"><i
-                                class="icon-link-outline"></i></a>
+                            class="icon-link-outline"></i></a>
 
                     <img alt="" src="img/blog/img8.jpg">
 
@@ -1190,7 +1084,7 @@
                             consectetur adip iscing elit psum dolor sit amet.</p>
                         <div class="nicdark_space20"></div>
                         <a href="single-post-right-sidebar.html" class="white nicdark_btn"><i
-                                    class="icon-doc-text-1 "></i> Read More</a>
+                                class="icon-doc-text-1 "></i> Read More</a>
                     </div>
 
                     <i class="icon-camera-outline nicdark_iconbg right medium blue"></i>
@@ -1203,7 +1097,7 @@
 
                     <a href="single-post-right-sidebar.html"
                        class="nicdark_zoom nicdark_btn_icon nicdark_bg_orange nicdark_border_orangedark white medium nicdark_radius_circle nicdark_absolute_left"><i
-                                class="icon-link-outline"></i></a>
+                            class="icon-link-outline"></i></a>
 
                     <img alt="" src="img/blog/img6.jpg">
 
@@ -1229,7 +1123,7 @@
                             consectetur adip iscing elit psum dolor sit amet.</p>
                         <div class="nicdark_space20"></div>
                         <a href="single-post-right-sidebar.html" class="white nicdark_btn"><i
-                                    class="icon-doc-text-1 "></i> Read More</a>
+                                class="icon-doc-text-1 "></i> Read More</a>
                     </div>
 
                     <i class="icon-pencil-1 nicdark_iconbg right medium red"></i>
@@ -1258,9 +1152,9 @@
 
         <div class="grid grid_12">
             <div class="nicdark_textevidence center">
-                <a href="blog-masonry.html"
+                <a href="#"
                    class="nicdark_zoom nicdark_btn nicdark_bg_blue medium nicdark_shadow nicdark_radius white nicdark_margin10"><i
-                            class="icon-th-outline"></i>&nbsp;&nbsp;&nbsp;VIEW MORE</a>
+                        class="icon-th-outline"></i>&nbsp;&nbsp;&nbsp;VIEW MORE</a>
             </div>
         </div>
 
@@ -1272,4 +1166,4 @@
 
 </section>
 <!--end section--><!--end-->
-@include('Assets.footer')
+@include('User.Assets.footer')

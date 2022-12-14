@@ -22,7 +22,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 
-Route::get('/', [HomeController::class, 'index']);
+Route::get('/', [HomeController::class, 'index'])->name('indexpage');
 Route::get('/courses', [HomeController::class, 'courses'])->name('user.courses');
 Route::get('/teachers', [HomeController::class, 'teachers'])->name('user.teachers');
 Route::get('/teacher', [TeacherController::class, 'teacher']);

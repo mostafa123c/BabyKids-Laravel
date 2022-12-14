@@ -13,7 +13,7 @@
                                 <div class="widget-header">
                                     <div class="row">
                                         <div class="col-xl-12 col-md-12 col-sm-12 col-12">
-                                            <h4>Activities Table</h4>
+                                            <h4>Courses Table</h4>
                                             <a href="{{route('admin.course.create')}}" class="btn btn-primary">Add New Course</a>
                                         </div>
                                     </div>
